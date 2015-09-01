@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Sep  1 11:43:14 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Full Version
+Revision Name : soc_system
+Top-level Entity Name : ghrd
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 7192
+Total pins : 224
+Total virtual pins : 0
+Total block memory bits : 823,384
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 1

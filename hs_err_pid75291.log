@@ -1,0 +1,1034 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00002b2f5e252638, pid=75291, tid=47482423804352
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_05-b13) (build 1.8.0_05-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# V  [libjvm.so+0x666638]  jni_invoke_nonstatic(JNIEnv_*, JavaValue*, _jobject*, JNICallType, _jmethodID*, JNI_ArgumentPusher*, Thread*)+0x38
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000020
+
+Registers:
+RAX=0x00007ffdd1f9a810, RBX=0x00007ffdd1f9a720, RCX=0x0000000000000001, RDX=0x0000000000000020
+RSP=0x00007ffdd1f9a580, RBP=0x00007ffdd1f9a6f0, RSI=0x00007ffdd1f9a780, RDI=0x00002b2f600101e0
+R8 =0x00002b2f60a36390, R9 =0x00007ffdd1f9a720, R10=0x0000000000000001, R11=0x0000000000000246
+R12=0x00002b2f60010000, R13=0x00002b2f60a36390, R14=0x0000000000000001, R15=0x00002b2f600101e0
+RIP=0x00002b2f5e252638, EFLAGS=0x0000000000010202, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007ffdd1f9a580)
+0x00007ffdd1f9a580:   0000000000000000 00002b2f5cfd969a
+0x00007ffdd1f9a590:   00007ffdd1f9a720 00007ffdd1f9a780
+0x00007ffdd1f9a5a0:   00002b2f600101e0 0000000000c19098
+0x00007ffdd1f9a5b0:   0000000000000000 0000000000000020
+0x00007ffdd1f9a5c0:   0000000280000000 0000000001ee2000
+0x00007ffdd1f9a5d0:   00002b2f00000000 000000000000000a
+0x00007ffdd1f9a5e0:   0000000000000000 0000000000000000
+0x00007ffdd1f9a5f0:   0000000000000340 00010102464c457f
+0x00007ffdd1f9a600:   0000000000000000 00000001003e0003
+0x00007ffdd1f9a610:   0000000000000000 0000000000000000
+0x00007ffdd1f9a620:   00000000000fb1f0 0038004000000000
+0x00007ffdd1f9a630:   0000000100000039 0000000500000002
+0x00007ffdd1f9a640:   0000000000000040 0000000000000040
+0x00007ffdd1f9a650:   000000410000077f 0000000000000005
+0x00007ffdd1f9a660:   00000000000001f8 0000000000000008
+0x00007ffdd1f9a670:   0000004000000040 0000000000000001
+0x00007ffdd1f9a680:   00000000000f3420 00000000000f3420
+0x00007ffdd1f9a690:   0000004000000040 0000000000000001
+0x00007ffdd1f9a6a0:   0000000000000010 0000000500000001
+0x00007ffdd1f9a6b0:   00000081000000bf 0000000000000004
+0x00007ffdd1f9a6c0:   0000000000000000 00007ffdd1f9a720
+0x00007ffdd1f9a6d0:   00002b2f60010000 00007ffdd1f9a760
+0x00007ffdd1f9a6e0:   00002b2f60a36390 00002b2f600101e0
+0x00007ffdd1f9a6f0:   00007ffdd1f9a7e0 00002b2f5e25653f
+0x00007ffdd1f9a700:   00002b2f60010000 0000000000000458
+0x00007ffdd1f9a710:   00007ffdd1f9a7f8 0000000000000020
+0x00007ffdd1f9a720:   00002b2f5ea8ca90 00002b2f60283640
+0x00007ffdd1f9a730:   0000000000000039 0000000000000063
+0x00007ffdd1f9a740:   0000000000000000 0000003000000018
+0x00007ffdd1f9a750:   00007ffdd1f9a8d0 00007ffdd1f9a810
+0x00007ffdd1f9a760:   00002b2f60010000 0000000000000000
+0x00007ffdd1f9a770:   00000081000000bf 00002b2f60010000 
+
+Instructions: (pc=0x00002b2f5e252638)
+0x00002b2f5e252618:   00 00 48 85 d2 48 89 bd b0 fe ff ff 48 89 b5 a8
+0x00002b2f5e252628:   fe ff ff 4c 89 8d a0 fe ff ff 0f 84 10 0a 00 00
+0x00002b2f5e252638:   4c 8b 22 4d 85 e4 0f 84 04 0a 00 00 48 8b 45 10
+0x00002b2f5e252648:   48 8b 98 20 01 00 00 48 83 7b 10 f7 0f 87 46 06 
+
+Register to memory mapping:
+
+RAX=0x00007ffdd1f9a810 is an unknown value
+RBX=0x00007ffdd1f9a720 is an unknown value
+RCX=0x0000000000000001 is an unknown value
+RDX=0x0000000000000020 is an unknown value
+RSP=0x00007ffdd1f9a580 is an unknown value
+RBP=0x00007ffdd1f9a6f0 is an unknown value
+RSI=0x00007ffdd1f9a780 is an unknown value
+RDI=0x00002b2f600101e0 is an unknown value
+R8 =0x00002b2f60a36390 is an unknown value
+R9 =0x00007ffdd1f9a720 is an unknown value
+R10=0x0000000000000001 is an unknown value
+R11=0x0000000000000246 is an unknown value
+R12=0x00002b2f60010000 is a thread
+R13=0x00002b2f60a36390 is an unknown value
+R14=0x0000000000000001 is an unknown value
+R15=0x00002b2f600101e0 is an unknown value
+
+
+Stack: [0x00007ffdd1ea5000,0x00007ffdd1fa5000],  sp=0x00007ffdd1f9a580,  free space=981k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x666638]  jni_invoke_nonstatic(JNIEnv_*, JavaValue*, _jobject*, JNICallType, _jmethodID*, JNI_ArgumentPusher*, Thread*)+0x38
+V  [libjvm.so+0x66a53f]  jni_CallVoidMethodV+0x10f
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:synchronizing (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00002b2f6000c160] Threads_lock - owner thread: 0x00002b2f60070000
+
+Heap:
+ def new generation   total 24384K, used 6976K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K,  19% used [0x00000000a2400000, 0x00000000a2835d78, 0x00000000a3930000)
+  from space 2688K,  99% used [0x00000000a3bd0000, 0x00000000a3e6a5c8, 0x00000000a3e70000)
+  to   space 2688K,   0% used [0x00000000a3930000, 0x00000000a3930000, 0x00000000a3bd0000)
+ tenured generation   total 54016K, used 31607K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36ddc98, 0x00000000c36dde00, 0x00000000c4cc0000)
+ Metaspace       used 23218K, capacity 23758K, committed 23936K, reserved 1071104K
+  class space    used 2697K, capacity 2830K, committed 2944K, reserved 1048576K
+
+Card table byte_map: [0x00002b2f733c0000,0x00002b2f736af000] byte_map_base: 0x00002b2f72eae000
+
+Polling page: 0x00002b2f5cff5000
+
+CodeCache: size=245760Kb used=19025Kb max_used=19054Kb free=226735Kb
+ bounds [0x00002b2f64000000, 0x00002b2f652d0000, 0x00002b2f73000000]
+ total_blobs=5033 nmethods=4663 adapters=284
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 16.018 Thread 0x00002b2f600ab000 5486       3       com.altera.tcl.interpreter.IsolatedTCLInterpreter::access$601 (6 bytes)
+Event: 16.018 Thread 0x00002b2f600ab000 nmethod 5486 0x00002b2f64daf850 code [0x00002b2f64daf9c0, 0x00002b2f64dafb28]
+Event: 16.021 Thread 0x00002b2f600ab000 5487       3       com.altera.utilities.AltSystem::_getenv (54 bytes)
+Event: 16.021 Thread 0x00002b2f600ab000 nmethod 5487 0x00002b2f64daf090 code [0x00002b2f64daf220, 0x00002b2f64daf708]
+Event: 16.022 Thread 0x00002b2f600ab000 5488       3       java.util.Collections$UnmodifiableMap::get (11 bytes)
+Event: 16.022 Thread 0x00002b2f600ab000 nmethod 5488 0x00002b2f64daec50 code [0x00002b2f64daedc0, 0x00002b2f64daefe8]
+Event: 16.022 Thread 0x00002b2f600ab000 5489       3       com.altera.utilities.AltSystem::getenv (8 bytes)
+Event: 16.022 Thread 0x00002b2f600ab000 nmethod 5489 0x00002b2f64dae810 code [0x00002b2f64dae980, 0x00002b2f64daeb88]
+Event: 16.028 Thread 0x00002b2f600ab000 5491       3       java.lang.StringBuilder::append (6 bytes)
+Event: 16.028 Thread 0x00002b2f600ab000 nmethod 5491 0x00002b2f64dae350 code [0x00002b2f64dae4c0, 0x00002b2f64dae728]
+
+GC Heap History (10 events):
+Event: 15.720 GC heap before
+{Heap before GC invocations=891 (full 1):
+ def new generation   total 24384K, used 22164K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K, 100% used [0x00000000a2400000, 0x00000000a3930000, 0x00000000a3930000)
+  from space 2688K,  17% used [0x00000000a3930000, 0x00000000a39a51b8, 0x00000000a3bd0000)
+  to   space 2688K,   0% used [0x00000000a3bd0000, 0x00000000a3bd0000, 0x00000000a3e70000)
+ tenured generation   total 54016K, used 31523K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36c8f18, 0x00000000c36c9000, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+Event: 15.723 GC heap after
+Heap after GC invocations=892 (full 1):
+ def new generation   total 24384K, used 476K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a3930000)
+  from space 2688K,  17% used [0x00000000a3bd0000, 0x00000000a3c471d8, 0x00000000a3e70000)
+  to   space 2688K,   0% used [0x00000000a3930000, 0x00000000a3930000, 0x00000000a3bd0000)
+ tenured generation   total 54016K, used 31523K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36c8f18, 0x00000000c36c9000, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+}
+Event: 15.761 GC heap before
+{Heap before GC invocations=892 (full 1):
+ def new generation   total 24384K, used 22172K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K, 100% used [0x00000000a2400000, 0x00000000a3930000, 0x00000000a3930000)
+  from space 2688K,  17% used [0x00000000a3bd0000, 0x00000000a3c471d8, 0x00000000a3e70000)
+  to   space 2688K,   0% used [0x00000000a3930000, 0x00000000a3930000, 0x00000000a3bd0000)
+ tenured generation   total 54016K, used 31523K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36c8f18, 0x00000000c36c9000, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+Event: 15.763 GC heap after
+Heap after GC invocations=893 (full 1):
+ def new generation   total 24384K, used 482K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a3930000)
+  from space 2688K,  17% used [0x00000000a3930000, 0x00000000a39a8988, 0x00000000a3bd0000)
+  to   space 2688K,   0% used [0x00000000a3bd0000, 0x00000000a3bd0000, 0x00000000a3e70000)
+ tenured generation   total 54016K, used 31524K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36c9120, 0x00000000c36c9200, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+}
+Event: 15.788 GC heap before
+{Heap before GC invocations=893 (full 1):
+ def new generation   total 24384K, used 22178K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K, 100% used [0x00000000a2400000, 0x00000000a3930000, 0x00000000a3930000)
+  from space 2688K,  17% used [0x00000000a3930000, 0x00000000a39a8988, 0x00000000a3bd0000)
+  to   space 2688K,   0% used [0x00000000a3bd0000, 0x00000000a3bd0000, 0x00000000a3e70000)
+ tenured generation   total 54016K, used 31524K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36c9120, 0x00000000c36c9200, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+Event: 15.790 GC heap after
+Heap after GC invocations=894 (full 1):
+ def new generation   total 24384K, used 452K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a3930000)
+  from space 2688K,  16% used [0x00000000a3bd0000, 0x00000000a3c41240, 0x00000000a3e70000)
+  to   space 2688K,   0% used [0x00000000a3930000, 0x00000000a3930000, 0x00000000a3bd0000)
+ tenured generation   total 54016K, used 31567K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36d3cf8, 0x00000000c36d3e00, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+}
+Event: 15.817 GC heap before
+{Heap before GC invocations=894 (full 1):
+ def new generation   total 24384K, used 22148K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K, 100% used [0x00000000a2400000, 0x00000000a3930000, 0x00000000a3930000)
+  from space 2688K,  16% used [0x00000000a3bd0000, 0x00000000a3c41240, 0x00000000a3e70000)
+  to   space 2688K,   0% used [0x00000000a3930000, 0x00000000a3930000, 0x00000000a3bd0000)
+ tenured generation   total 54016K, used 31567K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36d3cf8, 0x00000000c36d3e00, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+Event: 15.819 GC heap after
+Heap after GC invocations=895 (full 1):
+ def new generation   total 24384K, used 368K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a3930000)
+  from space 2688K,  13% used [0x00000000a3930000, 0x00000000a398c038, 0x00000000a3bd0000)
+  to   space 2688K,   0% used [0x00000000a3bd0000, 0x00000000a3bd0000, 0x00000000a3e70000)
+ tenured generation   total 54016K, used 31583K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36d7ef8, 0x00000000c36d8000, 0x00000000c4cc0000)
+ Metaspace       used 23098K, capacity 23624K, committed 23936K, reserved 1071104K
+  class space    used 2690K, capacity 2829K, committed 2944K, reserved 1048576K
+}
+Event: 15.978 GC heap before
+{Heap before GC invocations=895 (full 1):
+ def new generation   total 24384K, used 22064K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K, 100% used [0x00000000a2400000, 0x00000000a3930000, 0x00000000a3930000)
+  from space 2688K,  13% used [0x00000000a3930000, 0x00000000a398c038, 0x00000000a3bd0000)
+  to   space 2688K,   0% used [0x00000000a3bd0000, 0x00000000a3bd0000, 0x00000000a3e70000)
+ tenured generation   total 54016K, used 31583K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36d7ef8, 0x00000000c36d8000, 0x00000000c4cc0000)
+ Metaspace       used 23198K, capacity 23694K, committed 23936K, reserved 1071104K
+  class space    used 2697K, capacity 2830K, committed 2944K, reserved 1048576K
+Event: 15.983 GC heap after
+Heap after GC invocations=896 (full 1):
+ def new generation   total 24384K, used 2665K [0x00000000a2400000, 0x00000000a3e70000, 0x00000000c1800000)
+  eden space 21696K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a3930000)
+  from space 2688K,  99% used [0x00000000a3bd0000, 0x00000000a3e6a5c8, 0x00000000a3e70000)
+  to   space 2688K,   0% used [0x00000000a3930000, 0x00000000a3930000, 0x00000000a3bd0000)
+ tenured generation   total 54016K, used 31607K [0x00000000c1800000, 0x00000000c4cc0000, 0x0000000100000000)
+   the space 54016K,  58% used [0x00000000c1800000, 0x00000000c36ddc98, 0x00000000c36dde00, 0x00000000c4cc0000)
+ Metaspace       used 23198K, capacity 23694K, committed 23936K, reserved 1071104K
+  class space    used 2697K, capacity 2830K, committed 2944K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 11.410 Thread 0x00002b2f60010000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00002b2f645571e8 method=com.sun.org.apache.xerces.internal.impl.dv.xs.XSSimpleTypeDecl.normalize(Ljava/lang/Object;S)Ljava/lang/String; @ 40
+Event: 12.951 Thread 0x00002b2f60010000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00002b2f64ed08ec method=java.beans.Introspector.isAssignable(Ljava/lang/Class;Ljava/lang/Class;)Z @ 18
+Event: 12.975 Thread 0x00002b2f60010000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00002b2f645619f8 method=java.beans.Introspector.isAssignable(Ljava/lang/Class;Ljava/lang/Class;)Z @ 18
+Event: 15.294 Thread 0x00002b2f60010000 Uncommon trap: reason=unreached action=reinterpret pc=0x00002b2f651702c4 method=com.altera.tcl.interpreter.SimpleTCLInterpreter.convertTclObject(Ljava/lang/String;Ltcl/lang/TclObject;Ljava/lang/Class;)Ljava/lang/Object; @ 406
+Event: 15.858 Thread 0x00002b2f60010000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b2f64a7e990 method=java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry.getKey()Ljava/lang/Object; @ 4
+Event: 15.858 Thread 0x00002b2f60010000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b2f64a7e990 method=java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry.getKey()Ljava/lang/Object; @ 4
+Event: 15.858 Thread 0x00002b2f60010000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b2f64a7e990 method=java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry.getKey()Ljava/lang/Object; @ 4
+Event: 15.858 Thread 0x00002b2f60010000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b2f64a7e990 method=java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry.getKey()Ljava/lang/Object; @ 4
+Event: 15.858 Thread 0x00002b2f60010000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b2f649ebe10 method=java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry.getValue()Ljava/lang/Object; @ 4
+Event: 15.858 Thread 0x00002b2f60010000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b2f649ebe10 method=java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry.getValue()Ljava/lang/Object; @ 4
+
+Internal exceptions (10 events):
+Event: 14.725 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a271c248) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.133 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a2b28668) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.846 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a286b338) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.847 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a287a4e8) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.847 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a2893770) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.855 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a2984978) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.855 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a2993278) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.856 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a29a4750) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.858 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a29b3870) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 15.910 Thread 0x00002b2f60010000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a3022c28) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+
+Events (10 events):
+Event: 15.985 Executing VM operation: BulkRevokeBias
+Event: 15.985 Executing VM operation: BulkRevokeBias done
+Event: 16.005 Executing VM operation: RevokeBias
+Event: 16.006 Executing VM operation: RevokeBias done
+Event: 16.029 Executing VM operation: RevokeBias
+Event: 16.030 Executing VM operation: RevokeBias done
+Event: 16.030 Executing VM operation: RevokeBias
+Event: 16.030 Executing VM operation: RevokeBias done
+Event: 16.030 Executing VM operation: RevokeBias
+Event: 16.030 Executing VM operation: RevokeBias done
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:01 1871540                            /home/taisen/altera/15.0/quartus/linux64/jre64/bin/java
+00600000-00601000 rw-p 00000000 08:01 1871540                            /home/taisen/altera/15.0/quartus/linux64/jre64/bin/java
+021fa000-0248b000 rw-p 00000000 00:00 0                                  [heap]
+a2400000-a3e70000 rw-p 00000000 00:00 0 
+a3e70000-c1800000 ---p 00000000 00:00 0 
+c1800000-c4cc0000 rw-p 00000000 00:00 0 
+c4cc0000-100000000 ---p 00000000 00:00 0 
+100000000-1002e0000 rw-p 00000000 00:00 0 
+1002e0000-140000000 ---p 00000000 00:00 0 
+2b2f5cfd1000-2b2f5cff3000 r-xp 00000000 08:01 937095                     /lib/x86_64-linux-gnu/ld-2.15.so
+2b2f5cff3000-2b2f5cff5000 rw-p 00000000 00:00 0 
+2b2f5cff5000-2b2f5cff6000 ---p 00000000 00:00 0 
+2b2f5cff6000-2b2f5cff7000 rw-p 00000000 00:00 0 
+2b2f5cff7000-2b2f5cfff000 rw-s 00000000 08:01 702607                     /tmp/hsperfdata_taisen/75291
+2b2f5cfff000-2b2f5d000000 r--s 0000d000 08:01 163264                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/Nlview.jar
+2b2f5d000000-2b2f5d004000 r--s 00036000 08:01 163247                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/QuickServer.jar
+2b2f5d004000-2b2f5d007000 r--s 00018000 08:01 163362                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-digester.jar
+2b2f5d007000-2b2f5d00a000 r--s 0001f000 08:01 163320                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-beanutils.jar
+2b2f5d00a000-2b2f5d00c000 r--s 00008000 08:01 163266                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-logging.jar
+2b2f5d00c000-2b2f5d00e000 r--s 00009000 08:01 163319                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-pool.jar
+2b2f5d00e000-2b2f5d011000 rw-p 00000000 00:00 0 
+2b2f5d011000-2b2f5d012000 ---p 00000000 00:00 0 
+2b2f5d012000-2b2f5d112000 rwxp 00000000 00:00 0                          [stack:75292]
+2b2f5d112000-2b2f5d1e4000 rw-p 00000000 00:00 0 
+2b2f5d1e4000-2b2f5d1f1000 r--s 0007c000 08:01 163248                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-collections.jar
+2b2f5d1f1000-2b2f5d1f2000 r--s 00002000 08:01 163308                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/TableLayout.jar
+2b2f5d1f2000-2b2f5d1f3000 r--s 0000a000 08:01 163355                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/asm-3.1.jar
+2b2f5d1f3000-2b2f5d1f4000 r--p 00022000 08:01 937095                     /lib/x86_64-linux-gnu/ld-2.15.so
+2b2f5d1f4000-2b2f5d1f6000 rw-p 00023000 08:01 937095                     /lib/x86_64-linux-gnu/ld-2.15.so
+2b2f5d1f6000-2b2f5d20e000 r-xp 00000000 08:01 936941                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+2b2f5d20e000-2b2f5d40d000 ---p 00018000 08:01 936941                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+2b2f5d40d000-2b2f5d40e000 r--p 00017000 08:01 936941                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+2b2f5d40e000-2b2f5d40f000 rw-p 00018000 08:01 936941                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+2b2f5d40f000-2b2f5d413000 rw-p 00000000 00:00 0 
+2b2f5d413000-2b2f5d42a000 r-xp 00000000 08:01 1871482                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/jli/libjli.so
+2b2f5d42a000-2b2f5d629000 ---p 00017000 08:01 1871482                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/jli/libjli.so
+2b2f5d629000-2b2f5d62a000 rw-p 00016000 08:01 1871482                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/jli/libjli.so
+2b2f5d62a000-2b2f5d62c000 r-xp 00000000 08:01 938153                     /lib/x86_64-linux-gnu/libdl-2.15.so
+2b2f5d62c000-2b2f5d82c000 ---p 00002000 08:01 938153                     /lib/x86_64-linux-gnu/libdl-2.15.so
+2b2f5d82c000-2b2f5d82d000 r--p 00002000 08:01 938153                     /lib/x86_64-linux-gnu/libdl-2.15.so
+2b2f5d82d000-2b2f5d82e000 rw-p 00003000 08:01 938153                     /lib/x86_64-linux-gnu/libdl-2.15.so
+2b2f5d82e000-2b2f5d9e2000 r-xp 00000000 08:01 938149                     /lib/x86_64-linux-gnu/libc-2.15.so
+2b2f5d9e2000-2b2f5dbe1000 ---p 001b4000 08:01 938149                     /lib/x86_64-linux-gnu/libc-2.15.so
+2b2f5dbe1000-2b2f5dbe5000 r--p 001b3000 08:01 938149                     /lib/x86_64-linux-gnu/libc-2.15.so
+2b2f5dbe5000-2b2f5dbe7000 rw-p 001b7000 08:01 938149                     /lib/x86_64-linux-gnu/libc-2.15.so
+2b2f5dbe7000-2b2f5dbec000 rw-p 00000000 00:00 0 
+2b2f5dbec000-2b2f5e806000 r-xp 00000000 08:01 1871481                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/server/libjvm.so
+2b2f5e806000-2b2f5ea05000 ---p 00c1a000 08:01 1871481                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/server/libjvm.so
+2b2f5ea05000-2b2f5eace000 rw-p 00c19000 08:01 1871481                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/server/libjvm.so
+2b2f5eace000-2b2f5eb0f000 rw-p 00000000 00:00 0 
+2b2f5eb0f000-2b2f5ec0a000 r-xp 00000000 08:01 936808                     /lib/x86_64-linux-gnu/libm-2.15.so
+2b2f5ec0a000-2b2f5ee09000 ---p 000fb000 08:01 936808                     /lib/x86_64-linux-gnu/libm-2.15.so
+2b2f5ee09000-2b2f5ee0a000 r--p 000fa000 08:01 936808                     /lib/x86_64-linux-gnu/libm-2.15.so
+2b2f5ee0a000-2b2f5ee0b000 rw-p 000fb000 08:01 936808                     /lib/x86_64-linux-gnu/libm-2.15.so
+2b2f5ee0b000-2b2f5ee12000 r-xp 00000000 08:01 937096                     /lib/x86_64-linux-gnu/librt-2.15.so
+2b2f5ee12000-2b2f5f011000 ---p 00007000 08:01 937096                     /lib/x86_64-linux-gnu/librt-2.15.so
+2b2f5f011000-2b2f5f012000 r--p 00006000 08:01 937096                     /lib/x86_64-linux-gnu/librt-2.15.so
+2b2f5f012000-2b2f5f013000 rw-p 00007000 08:01 937096                     /lib/x86_64-linux-gnu/librt-2.15.so
+2b2f5f013000-2b2f5f020000 r-xp 00000000 08:01 1871448                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libverify.so
+2b2f5f020000-2b2f5f220000 ---p 0000d000 08:01 1871448                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libverify.so
+2b2f5f220000-2b2f5f222000 rw-p 0000d000 08:01 1871448                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libverify.so
+2b2f5f222000-2b2f5f24c000 r-xp 00000000 08:01 1871454                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libjava.so
+2b2f5f24c000-2b2f5f44c000 ---p 0002a000 08:01 1871454                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libjava.so
+2b2f5f44c000-2b2f5f44e000 rw-p 0002a000 08:01 1871454                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libjava.so
+2b2f5f44e000-2b2f5f456000 r-xp 00000000 08:01 938151                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+2b2f5f456000-2b2f5f655000 ---p 00008000 08:01 938151                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+2b2f5f655000-2b2f5f656000 r--p 00007000 08:01 938151                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+2b2f5f656000-2b2f5f657000 rw-p 00008000 08:01 938151                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+2b2f5f657000-2b2f5f66e000 r-xp 00000000 08:01 938150                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+2b2f5f66e000-2b2f5f86d000 ---p 00017000 08:01 938150                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+2b2f5f86d000-2b2f5f86e000 r--p 00016000 08:01 938150                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+2b2f5f86e000-2b2f5f86f000 rw-p 00017000 08:01 938150                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+2b2f5f86f000-2b2f5f871000 rw-p 00000000 00:00 0 
+2b2f5f871000-2b2f5f87b000 r-xp 00000000 08:01 933843                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+2b2f5f87b000-2b2f5fa7b000 ---p 0000a000 08:01 933843                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+2b2f5fa7b000-2b2f5fa7c000 r--p 0000a000 08:01 933843                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+2b2f5fa7c000-2b2f5fa7d000 rw-p 0000b000 08:01 933843                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+2b2f5fa7d000-2b2f5fa89000 r-xp 00000000 08:01 937094                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+2b2f5fa89000-2b2f5fc88000 ---p 0000c000 08:01 937094                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+2b2f5fc88000-2b2f5fc89000 r--p 0000b000 08:01 937094                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+2b2f5fc89000-2b2f5fc8a000 rw-p 0000c000 08:01 937094                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+2b2f5fc8a000-2b2f5fca6000 r-xp 00000000 08:01 1871472                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libzip.so
+2b2f5fca6000-2b2f5fea5000 ---p 0001c000 08:01 1871472                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libzip.so
+2b2f5fea5000-2b2f5fea6000 rw-p 0001b000 08:01 1871472                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libzip.so
+2b2f5fea6000-2b2f5ff1c000 rw-p 00000000 00:00 0 
+2b2f5ff1c000-2b2f5ff20000 r--s 0004a000 08:01 163244                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/appframework-1.03.jar
+2b2f5ff20000-2b2f5ff21000 r--s 00007000 08:01 163279                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/asm-commons-3.1.jar
+2b2f5ff21000-2b2f5ff24000 r--s 00011000 08:01 163353                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/basicmodel.jar
+2b2f5ff24000-2b2f5ff2b000 r--s 00094000 08:01 163281                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/beansbinding-1.2.1.jar
+2b2f5ff2b000-2b2f5ff2f000 r--s 00022000 08:01 163274                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/binding-2.0.6.jar
+2b2f5ff2f000-2b2f5ff3d000 r--s 00071000 08:01 163297                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.componenteditor2.jar
+2b2f5ff3d000-2b2f5ff47000 r--s 00052000 08:01 163270                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.ui.jar
+2b2f5ff47000-2b2f5ff49000 r--s 00010000 08:01 163241                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/miglayout15-swing.jar
+2b2f5ff49000-2b2f5ff59000 r--s 000a4000 08:01 163223                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/mydoggy-plaf.jar
+2b2f5ff59000-2b2f5ff5b000 r--s 00007000 08:01 163360                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/mydoggy-api.jar
+2b2f5ff5b000-2b2f5ff5d000 r--s 00004000 08:01 163259                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/mydoggy-res.jar
+2b2f5ff5d000-2b2f5ff5f000 r--s 00004000 08:01 146914                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.ui.quartus.jar
+2b2f5ff5f000-2b2f5ff89000 r--s 001e9000 08:01 163301                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/guava-15.0.jar
+2b2f5ff89000-2b2f5ff91000 r--s 0004f000 08:01 163333                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.ui.ientity.jar
+2b2f5ff91000-2b2f5ff93000 r--s 0000c000 08:01 163334                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar
+2b2f5ff93000-2b2f5ff95000 r--s 00018000 08:01 163227                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar
+2b2f5ff95000-2b2f5ff96000 r--s 00000000 08:01 146917                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.version.jar
+2b2f5ff96000-2b2f5ff98000 r--s 00010000 08:01 163345                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar
+2b2f5ff98000-2b2f5ff9b000 r--s 00036000 08:01 163317                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/org-netbeans-swing-outline.jar
+2b2f5ff9b000-2b2f5ff9c000 r--s 00006000 08:01 163349                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar
+2b2f5ff9c000-2b2f5ff9f000 r--s 0000e000 08:01 163344                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.minieval2.jar
+2b2f5ff9f000-2b2f5ffa2000 r--s 0002b000 08:01 163330                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar
+2b2f5ffa2000-2b2f5ffa8000 r--s 00045000 08:01 163321                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar
+2b2f5ffa8000-2b2f5ffb0000 r--s 0007c000 08:01 163329                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar
+2b2f5ffb0000-2b2f5ffb6000 r--s 00051000 08:01 163221                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar
+2b2f5ffb6000-2b2f5ffbe000 r--s 00051000 08:01 146921                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar
+2b2f5ffbe000-2b2f5ffcf000 r--s 000d0000 08:01 163326                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jaxb-impl.jar
+2b2f5ffcf000-2b2f5ffd3000 r--s 00015000 08:01 163293                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jaxb-api.jar
+2b2f5ffd3000-2b2f5ffd9000 r--s 00031000 08:01 163306                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jaxb-core.jar
+2b2f5ffd9000-2b2f5ffe1000 r--s 00051000 08:01 146919                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar
+2b2f5ffe1000-2b2f5ffe7000 r--s 00058000 08:01 163237                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar
+2b2f5ffe7000-2b2f5ffe9000 r--s 0000a000 08:01 163324                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar
+2b2f5ffe9000-2b2f5fff9000 r--s 000e3000 08:01 146916                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar
+2b2f5fff9000-2b2f5fffc000 r--s 0000b000 08:01 163314                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar
+2b2f5fffc000-2b2f5fffe000 r--s 00007000 08:01 163269                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar
+2b2f5fffe000-2b2f5ffff000 r--s 00014000 08:01 163318                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/javasysmon.jar
+2b2f5ffff000-2b2f60000000 r--s 0000c000 08:01 163342                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-logging-1.1.jar
+2b2f60000000-2b2f63ff8000 rw-p 00000000 00:00 0 
+2b2f63ff8000-2b2f64000000 ---p 00000000 00:00 0 
+2b2f64000000-2b2f652d0000 rwxp 00000000 00:00 0 
+2b2f652d0000-2b2f73000000 ---p 00000000 00:00 0 
+2b2f73000000-2b2f7304c000 rw-p 00000000 00:00 0 
+2b2f7304c000-2b2f733c0000 ---p 00000000 00:00 0 
+2b2f733c0000-2b2f733ce000 rw-p 00000000 00:00 0 
+2b2f733ce000-2b2f734ba000 ---p 00000000 00:00 0 
+2b2f734ba000-2b2f734d5000 rw-p 00000000 00:00 0 
+2b2f734d5000-2b2f736ae000 ---p 00000000 00:00 0 
+2b2f736ae000-2b2f736ca000 rw-p 00000000 00:00 0 
+2b2f736ca000-2b2f738a4000 ---p 00000000 00:00 0 
+2b2f738a4000-2b2f740a4000 rw-p 00000000 00:00 0 
+2b2f740a4000-2b2f74279000 r--s 033af000 08:01 1871350                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/rt.jar
+2b2f74279000-2b2f7427a000 ---p 00000000 00:00 0 
+2b2f7427a000-2b2f7457c000 rwxp 00000000 00:00 0                          [stack:75293]
+2b2f7457c000-2b2f74c60000 r--p 00000000 08:01 400175                     /usr/lib/locale/locale-archive
+2b2f74c60000-2b2f74d61000 rwxp 00000000 00:00 0                          [stack:75296]
+2b2f74d61000-2b2f74d62000 ---p 00000000 00:00 0 
+2b2f74d62000-2b2f74e62000 rwxp 00000000 00:00 0                          [stack:75297]
+2b2f74e62000-2b2f74e63000 ---p 00000000 00:00 0 
+2b2f74e63000-2b2f74f63000 rwxp 00000000 00:00 0                          [stack:75298]
+2b2f74f63000-2b2f74f64000 ---p 00000000 00:00 0 
+2b2f74f64000-2b2f75165000 rwxp 00000000 00:00 0                          [stack:75299]
+2b2f75165000-2b2f75166000 ---p 00000000 00:00 0 
+2b2f75166000-2b2f75266000 rwxp 00000000 00:00 0                          [stack:75301]
+2b2f75266000-2b2f7526b000 r--s 0000f000 08:01 146920                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar
+2b2f7526b000-2b2f7526e000 r--s 0003e000 08:01 163351                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.utilities.jar
+2b2f7526e000-2b2f75274000 r--s 00048000 08:01 163315                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar
+2b2f75274000-2b2f75276000 r--s 0000d000 08:01 163343                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar
+2b2f75276000-2b2f75278000 r--s 00007000 08:01 163238                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar
+2b2f75278000-2b2f7527b000 r--s 00012000 08:01 163263                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar
+2b2f7527b000-2b2f7527f000 r--s 0002a000 08:01 163278                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar
+2b2f7527f000-2b2f75285000 r--s 0007a000 08:01 163307                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar
+2b2f75285000-2b2f75288000 r--s 00014000 08:01 163312                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.app_lib.jar
+2b2f75288000-2b2f7528e000 r--s 00089000 08:01 163225                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.jar
+2b2f7528e000-2b2f7528f000 r--s 0000b000 08:01 163254                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.elements.jar
+2b2f7528f000-2b2f75293000 r--s 0000d000 08:01 163295                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.schema.jar
+2b2f75293000-2b2f75295000 r--s 00016000 08:01 163346                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.swinfo.jar
+2b2f75295000-2b2f75296000 r--s 00003000 08:01 163341                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.embeddedsw.jar
+2b2f75296000-2b2f7529a000 r--s 0001e000 08:01 163348                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.utilities.jar
+2b2f7529a000-2b2f7529b000 r--s 00000000 08:01 163338                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/xmlbeans-2.2.0.jar
+2b2f7529b000-2b2f7529c000 r--s 00000000 08:01 163354                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.service.jre.jar
+2b2f7529c000-2b2f7529d000 r--s 00002000 08:01 163352                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcplatform.jar
+2b2f7529d000-2b2f7529e000 r--s 00000000 08:01 163240                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.librarian.jar
+2b2f7529e000-2b2f752a1000 r--s 00019000 08:01 163265                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar
+2b2f752a1000-2b2f752a3000 r--s 00006000 08:01 146923                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcfactories.jar
+2b2f752a3000-2b2f752a7000 r--s 0001f000 08:01 163316                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/explicitlayout.jar
+2b2f752a7000-2b2f752af000 r--s 00051000 08:01 163323                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/velocity-1.4.jar
+2b2f752af000-2b2f752ba000 r--s 00074000 08:01 163284                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/velocity-dep-1.4.jar
+2b2f752ba000-2b2f752be000 r--s 00029000 08:01 163363                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.atlantic.jar
+2b2f752be000-2b2f752c5000 r--s 00063000 08:01 163332                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.megawizard2.jar
+2b2f752c5000-2b2f752d1000 r--s 00084000 08:01 163288                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.editor.jar
+2b2f752d1000-2b2f752d3000 r--s 0000f000 08:01 163283                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.commandline.jar
+2b2f752d3000-2b2f752d7000 r--s 0001c000 08:01 163243                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.core.jar
+2b2f752d7000-2b2f752da000 r--s 0000b000 08:01 163289                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.hal.jar
+2b2f752da000-2b2f752dc000 r--s 00006000 08:01 163299                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.lwhal.jar
+2b2f752dc000-2b2f752dd000 r--s 0001f000 08:01 163359                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.scripting.jar
+2b2f752dd000-2b2f752de000 r--s 00003000 08:01 163276                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.tcl.ui.jar
+2b2f752de000-2b2f752df000 r--s 00004000 08:01 163357                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.cpexample.jar
+2b2f752df000-2b2f752e6000 r--s 00056000 08:01 163302                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.flash.jar
+2b2f752e6000-2b2f752f1000 r--s 00182000 08:01 163235                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.jar
+2b2f752f1000-2b2f752f7000 r--s 0004a000 08:01 163251                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.designs.jar
+2b2f752f7000-2b2f752fa000 r--s 00038000 08:01 163291                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.scripting.jar
+2b2f752fa000-2b2f752fe000 r--s 00036000 08:01 163236                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.gui.jar
+2b2f752fe000-2b2f7530c000 r--s 00072000 08:01 163356                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.elf.jar
+2b2f7530c000-2b2f75312000 r--s 00042000 08:01 163272                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.jtag.jar
+2b2f75312000-2b2f75313000 r--s 00002000 08:01 163232                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.lightclient.jar
+2b2f75313000-2b2f75314000 r--s 00000000 08:01 163290                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.jtagsimulator.jar
+2b2f75314000-2b2f75315000 r--s 00006000 08:01 163327                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.configrom.jar
+2b2f75315000-2b2f75318000 r--s 0002d000 08:01 163255                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.launch.jar
+2b2f75318000-2b2f7531b000 r--s 00024000 08:01 163230                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.genman.jar
+2b2f7531b000-2b2f7531d000 r--s 0000e000 08:01 163331                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.ip.regenerator.jar
+2b2f7531d000-2b2f75320000 r--s 00020000 08:01 163335                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.iplauncher.jar
+2b2f75320000-2b2f75350000 r--s 0040c000 08:01 146915                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopceditor.jar
+2b2f75350000-2b2f75351000 r--s 00003000 08:01 163245                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.qsys.ui.jar
+2b2f75351000-2b2f75353000 r--s 00007000 08:01 163262                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.qsys.blackboxmodule.jar
+2b2f75353000-2b2f75358000 r--s 00033000 08:01 146922                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.sbtools.jar
+2b2f75358000-2b2f7535a000 r--s 0000a000 08:01 163304                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.widgets.jar
+2b2f7535a000-2b2f7535c000 r--s 00007000 08:01 163286                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.module.jar
+2b2f7535c000-2b2f75365000 r--s 00076000 08:01 163328                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jmwizc.jar
+2b2f75365000-2b2f75377000 r--s 00090000 08:01 163294                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.nios2.isa.jar
+2b2f75377000-2b2f75379000 r--s 00009000 08:01 163347                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.nios2.rtl.trace.jar
+2b2f75379000-2b2f7537b000 r--s 00001000 08:01 163296                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.nios2.trace.jar
+2b2f7537b000-2b2f7537d000 r--s 00003000 08:01 163228                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.script.debugwindow.jar
+2b2f7537d000-2b2f7537e000 r--s 0000e000 08:01 163364                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.atlantic.packetformatconverter.jar
+2b2f7537e000-2b2f75380000 r--s 0000c000 08:01 163292                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar
+2b2f75380000-2b2f75383000 r--s 00018000 08:01 163253                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.app.jar
+2b2f75383000-2b2f75384000 r--s 00001000 08:01 163282                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.matlabapi.jar
+2b2f75384000-2b2f75388000 r--s 0001c000 08:01 163224                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.trace.drivers.jar
+2b2f75388000-2b2f7538b000 r--s 00011000 08:01 163275                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.usb.jar
+2b2f7538b000-2b2f7538c000 r--s 00006000 08:01 163322                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.tcpchannel.jar
+2b2f7538c000-2b2f7538e000 r--s 00003000 08:01 163257                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.pli.jar
+2b2f7538e000-2b2f7538f000 r--s 00001000 08:01 163249                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.memory.jar
+2b2f7538f000-2b2f75394000 r--s 00029000 08:01 163358                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.trace.database.jar
+2b2f75394000-2b2f75398000 r--s 00020000 08:01 163361                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.trace.gui.jar
+2b2f75398000-2b2f7539d000 r--s 0002c000 08:01 163287                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.dashboard.jar
+2b2f7539d000-2b2f7539f000 r--s 00006000 08:01 163267                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.driver.jar
+2b2f7539f000-2b2f753a0000 r--s 00002000 08:01 163258                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.helper.jar
+2b2f753a0000-2b2f753a1000 r--s 00003000 08:01 163339                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.iobus.jar
+2b2f753a1000-2b2f753af000 r--s 0007f000 08:01 163337                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/commons-collections-3.2.1.jar
+2b2f753af000-2b2f753ff000 r--s 0024a000 08:01 146918                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.transceivers.jar
+2b2f753ff000-2b2f75406000 r--s 0003f000 08:01 163268                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.busanalyzer.jar
+2b2f75406000-2b2f75409000 r--s 0000d000 08:01 163242                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.monitor.jar
+2b2f75409000-2b2f7540a000 r--s 00007000 08:01 163311                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.issp.jar
+2b2f7540a000-2b2f7540b000 r--s 00005000 08:01 163298                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.gdbserver.jar
+2b2f7540b000-2b2f7540c000 r--s 0000b000 08:01 163273                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.sldhubchannel.jar
+2b2f7540c000-2b2f7540d000 r--s 00006000 08:01 163226                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.systemconsole.spdy.jar
+2b2f7540d000-2b2f7540e000 r--s 00002000 08:01 163239                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.tools.exampledesigns.jar
+2b2f7540e000-2b2f75410000 r--s 00002000 08:01 163336                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.tools.sopcformats.jar
+2b2f75410000-2b2f75412000 r--s 00003000 08:01 163325                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.util.elf.jar
+2b2f75412000-2b2f75428000 r--s 000bc000 08:01 163261                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/docking-frames-common.jar
+2b2f75428000-2b2f75460000 r--s 00217000 08:01 163233                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/docking-frames-core.jar
+2b2f75460000-2b2f75466000 r--s 00046000 08:01 163367                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jcommon-1.0.16.jar
+2b2f75466000-2b2f75477000 r--s 0014c000 08:01 163280                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jfreechart-1.0.13.jar
+2b2f75477000-2b2f75483000 r--s 0008d000 08:01 163310                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jgraphx.jar
+2b2f75483000-2b2f75487000 r--s 00031000 08:01 163366                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jline-2.12.jar
+2b2f75487000-2b2f75489000 r--s 00004000 08:01 163365                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/jsr173_1.0_api.jar
+2b2f75489000-2b2f7548f000 r--s 0002e000 08:01 163305                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/l2fprod-common-sheet.jar
+2b2f7548f000-2b2f75490000 r--s 00011000 08:01 163246                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/miglayout-swing.jar
+2b2f75490000-2b2f75492000 r--s 00014000 08:01 163252                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/org-netbeans-swing-outline-RELEASE691-sources.jar
+2b2f75492000-2b2f75493000 r--s 00002000 08:01 163340                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/swing-worker.jar
+2b2f75493000-2b2f75495000 r--s 00008000 08:01 163231                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/wraplf.jar
+2b2f75495000-2b2f754d2000 r--s 0024e000 08:01 163234                     /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/xbean.jar
+2b2f754d2000-2b2f754df000 r-xp 00000000 08:01 969071                     /home/taisen/altera/15.0/quartus/linux64/libccl_sqlite3_jdbc_jni_bridge.so
+2b2f754df000-2b2f756de000 ---p 0000d000 08:01 969071                     /home/taisen/altera/15.0/quartus/linux64/libccl_sqlite3_jdbc_jni_bridge.so
+2b2f756de000-2b2f756df000 rw-p 0000c000 08:01 969071                     /home/taisen/altera/15.0/quartus/linux64/libccl_sqlite3_jdbc_jni_bridge.so
+2b2f756df000-2b2f7577d000 r-xp 00000000 08:01 969269                     /home/taisen/altera/15.0/quartus/linux64/libccl_sqlite3.so
+2b2f7577d000-2b2f7597c000 ---p 0009e000 08:01 969269                     /home/taisen/altera/15.0/quartus/linux64/libccl_sqlite3.so
+2b2f7597c000-2b2f75980000 rw-p 0009d000 08:01 969269                     /home/taisen/altera/15.0/quartus/linux64/libccl_sqlite3.so
+2b2f75980000-2b2f75981000 rw-p 00000000 00:00 0 
+2b2f75981000-2b2f75a63000 r-xp 00000000 08:01 969435                     /home/taisen/altera/15.0/quartus/linux64/libboost_regex.so.1.53.0
+2b2f75a63000-2b2f75c63000 ---p 000e2000 08:01 969435                     /home/taisen/altera/15.0/quartus/linux64/libboost_regex.so.1.53.0
+2b2f75c63000-2b2f75c69000 rw-p 000e2000 08:01 969435                     /home/taisen/altera/15.0/quartus/linux64/libboost_regex.so.1.53.0
+2b2f75c69000-2b2f75c7f000 r-xp 00000000 08:01 969414                     /home/taisen/altera/15.0/quartus/linux64/libboost_filesystem.so.1.53.0
+2b2f75c7f000-2b2f75e7f000 ---p 00016000 08:01 969414                     /home/taisen/altera/15.0/quartus/linux64/libboost_filesystem.so.1.53.0
+2b2f75e7f000-2b2f75e80000 rw-p 00016000 08:01 969414                     /home/taisen/altera/15.0/quartus/linux64/libboost_filesystem.so.1.53.0
+2b2f75e80000-2b2f75e83000 r-xp 00000000 08:01 969403                     /home/taisen/altera/15.0/quartus/linux64/libboost_system.so.1.53.0
+2b2f75e83000-2b2f76082000 ---p 00003000 08:01 969403                     /home/taisen/altera/15.0/quartus/linux64/libboost_system.so.1.53.0
+2b2f76082000-2b2f76083000 rw-p 00002000 08:01 969403                     /home/taisen/altera/15.0/quartus/linux64/libboost_system.so.1.53.0
+2b2f76083000-2b2f760f1000 r-xp 00000000 08:01 969482                     /home/taisen/altera/15.0/quartus/linux64/libboost_program_options.so.1.53.0
+2b2f760f1000-2b2f762f1000 ---p 0006e000 08:01 969482                     /home/taisen/altera/15.0/quartus/linux64/libboost_program_options.so.1.53.0
+2b2f762f1000-2b2f762f5000 rw-p 0006e000 08:01 969482                     /home/taisen/altera/15.0/quartus/linux64/libboost_program_options.so.1.53.0
+2b2f762f5000-2b2f763df000 r-xp 00000000 08:01 970188                     /home/taisen/altera/15.0/quartus/linux64/libstdc++.so.6
+2b2f763df000-2b2f765de000 ---p 000ea000 08:01 970188                     /home/taisen/altera/15.0/quartus/linux64/libstdc++.so.6
+2b2f765de000-2b2f765e6000 r--p 000e9000 08:01 970188                     /home/taisen/altera/15.0/quartus/linux64/libstdc++.so.6
+2b2f765e6000-2b2f765e8000 rw-p 000f1000 08:01 970188                     /home/taisen/altera/15.0/quartus/linux64/libstdc++.so.6
+2b2f765e8000-2b2f765fd000 rw-p 00000000 00:00 0 
+2b2f765fd000-2b2f7660b000 r-xp 00000000 08:01 970190                     /home/taisen/altera/15.0/quartus/linux64/libgomp.so.1
+2b2f7660b000-2b2f7680a000 ---p 0000e000 08:01 970190                     /home/taisen/altera/15.0/quartus/linux64/libgomp.so.1
+2b2f7680a000-2b2f7680b000 rw-p 0000d000 08:01 970190                     /home/taisen/altera/15.0/quartus/linux64/libgomp.so.1
+2b2f7680b000-2b2f76820000 r-xp 00000000 08:01 970189                     /home/taisen/altera/15.0/quartus/linux64/libgcc_s.so.1
+2b2f76820000-2b2f76a20000 ---p 00015000 08:01 970189                     /home/taisen/altera/15.0/quartus/linux64/libgcc_s.so.1
+2b2f76a20000-2b2f76a21000 rw-p 00015000 08:01 970189                     /home/taisen/altera/15.0/quartus/linux64/libgcc_s.so.1
+2b2f76a21000-2b2f76a22000 r--s 00000000 08:01 1577470                    /home/taisen/altera/15.0/quartus/common/librarian/factories/dspb_entities.jar
+2b2f76a22000-2b2f76a35000 r--s 00089000 08:01 146097                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/dspb_entities.jar
+2b2f76a35000-2b2f76a3d000 r--s 00051000 08:01 167924                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/extlibs/velocity-1.4.jar
+2b2f76a3d000-2b2f76a40000 r--s 00013000 08:01 167923                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/extlibs/velocity-tools-1.2.jar
+2b2f76a40000-2b2f76a4b000 r--s 00074000 08:01 167922                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/extlibs/velocity-dep-1.4.jar
+2b2f76a4b000-2b2f76a4d000 r--s 00003000 08:01 1577467                    /home/taisen/altera/15.0/quartus/common/librarian/factories/cusp-factory.jar
+2b2f76a4d000-2b2f76abd000 r--s 006c2000 08:01 146069                     /home/taisen/altera/15.0/quartus/cusp/bin/cusp-engine.jar
+2b2f76abd000-2b2f76abe000 r--s 00000000 08:01 1577468                    /home/taisen/altera/15.0/quartus/common/librarian/factories/mdl_factory.jar
+2b2f76abe000-2b2f76acd000 r--s 00085000 08:01 146098                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/dspb.jar
+2b2f76acd000-2b2f76aed000 r--s 001d6000 08:01 167925                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/extlibs/castor-1.0.3.jar
+2b2f76aed000-2b2f76aef000 r--s 0000f000 08:01 167921                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/extlibs/JSAP-2.0a.jar
+2b2f76aef000-2b2f76af8000 r--s 00034000 08:01 146082                     /home/taisen/altera/15.0/quartus/dsp_builder/bin64/simulink_model.jar
+2b2f76af8000-2b2f76b0b000 r--s 00345000 08:01 1871354                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/resources.jar
+2b2f76b0b000-2b2f76c29000 r-xp 00000000 08:01 957671                     /home/taisen/altera/15.0/quartus/linux64/libsld_filejni.so
+2b2f76c29000-2b2f76e29000 ---p 0011e000 08:01 957671                     /home/taisen/altera/15.0/quartus/linux64/libsld_filejni.so
+2b2f76e29000-2b2f76e39000 rw-p 0011e000 08:01 957671                     /home/taisen/altera/15.0/quartus/linux64/libsld_filejni.so
+2b2f76e39000-2b2f7703f000 rw-p 00000000 00:00 0 
+2b2f7703f000-2b2f77140000 rwxp 00000000 00:00 0                          [stack:75302]
+2b2f77140000-2b2f77146000 r-xp 00000000 08:01 967816                     /home/taisen/altera/15.0/quartus/linux64/libtcl_jni_bridge.so
+2b2f77146000-2b2f77345000 ---p 00006000 08:01 967816                     /home/taisen/altera/15.0/quartus/linux64/libtcl_jni_bridge.so
+2b2f77345000-2b2f77346000 rw-p 00005000 08:01 967816                     /home/taisen/altera/15.0/quartus/linux64/libtcl_jni_bridge.so
+2b2f77346000-2b2f77347000 r-xp 00000000 08:01 969492                     /home/taisen/altera/15.0/quartus/linux64/libtbbamalloc.so
+2b2f77347000-2b2f77546000 ---p 00001000 08:01 969492                     /home/taisen/altera/15.0/quartus/linux64/libtbbamalloc.so
+2b2f77546000-2b2f77547000 rw-p 00000000 08:01 969492                     /home/taisen/altera/15.0/quartus/linux64/libtbbamalloc.so
+2b2f77547000-2b2f77579000 r-xp 00000000 08:01 957730                     /home/taisen/altera/15.0/quartus/linux64/libtbb.so.2
+2b2f77579000-2b2f77779000 ---p 00032000 08:01 957730                     /home/taisen/altera/15.0/quartus/linux64/libtbb.so.2
+2b2f77779000-2b2f7777d000 rw-p 00032000 08:01 957730                     /home/taisen/altera/15.0/quartus/linux64/libtbb.so.2
+2b2f7777d000-2b2f7777f000 rw-p 00000000 00:00 0 
+2b2f7777f000-2b2f77928000 r-xp 00000000 08:01 969397                     /home/taisen/altera/15.0/quartus/linux64/libtcl8.6.so
+2b2f77928000-2b2f77b28000 ---p 001a9000 08:01 969397                     /home/taisen/altera/15.0/quartus/linux64/libtcl8.6.so
+2b2f77b28000-2b2f77b38000 rw-p 001a9000 08:01 969397                     /home/taisen/altera/15.0/quartus/linux64/libtcl8.6.so
+2b2f77b38000-2b2f77b39000 rw-p 00000000 00:00 0 
+2b2f77b39000-2b2f77c52000 r-xp 00000000 08:01 969452                     /home/taisen/altera/15.0/quartus/linux64/libicuuc.so.34
+2b2f77c52000-2b2f77e51000 ---p 00119000 08:01 969452                     /home/taisen/altera/15.0/quartus/linux64/libicuuc.so.34
+2b2f77e51000-2b2f77e5e000 rw-p 00118000 08:01 969452                     /home/taisen/altera/15.0/quartus/linux64/libicuuc.so.34
+2b2f77e5e000-2b2f77e5f000 rw-p 00000000 00:00 0 
+2b2f77e5f000-2b2f77e6a000 r--s 00210000 08:01 1871411                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/ext/localedata.jar
+2b2f77e6a000-2b2f77e86000 r--s 00393000 08:01 1871412                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/ext/cldrdata.jar
+2b2f77e86000-2b2f77e87000 r--p 00000000 00:00 0 
+2b2f77e87000-2b2f77e8a000 ---p 00000000 00:00 0 
+2b2f77e8a000-2b2f77ec0000 rwxp 00000000 00:00 0                          [stack:75306]
+2b2f77ec0000-2b2f77ec9000 r--s 0007b000 08:01 1911419                    /home/taisen/altera/15.0/ip/altera/alpha_blending_mixer/lib/ip_toolbench/alpha_blending_mixer.jar
+2b2f77ec9000-2b2f77ecd000 r--s 0004d000 08:01 1882646                    /home/taisen/altera/15.0/ip/altera/alpha_blending_mixer/lib/ip_toolbench/forms_rt.jar
+2b2f77ecd000-2b2f77ed0000 r--s 00022000 08:01 1882648                    /home/taisen/altera/15.0/ip/altera/alpha_blending_mixer/lib/ip_toolbench/jdom.jar
+2b2f77ed0000-2b2f77ed9000 r--s 0007b000 08:01 1574353                    /home/taisen/altera/15.0/ip/altera/test_pattern_generator/lib/ip_toolbench/test_pattern_generator.jar
+2b2f77ed9000-2b2f77edd000 r--s 0004d000 08:01 1620365                    /home/taisen/altera/15.0/ip/altera/test_pattern_generator/lib/ip_toolbench/forms_rt.jar
+2b2f77edd000-2b2f77ee0000 r--s 00022000 08:01 1620367                    /home/taisen/altera/15.0/ip/altera/test_pattern_generator/lib/ip_toolbench/jdom.jar
+2b2f77ee0000-2b2f77ee1000 rw-p 00000000 00:00 0 
+2b2f77ee2000-2b2f77ee3000 rw-p 00000000 00:00 0 
+2b2f77ee3000-2b2f77eea000 r--s 00000000 08:01 547425                     /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+2b2f78000000-2b2f78343000 rw-p 00000000 00:00 0 
+2b2f78343000-2b2f7c000000 ---p 00000000 00:00 0 
+2b2f7c000000-2b2f7c021000 rw-p 00000000 00:00 0 
+2b2f7c021000-2b2f80000000 ---p 00000000 00:00 0 
+2b2f80000000-2b2f80021000 rw-p 00000000 00:00 0 
+2b2f80021000-2b2f84000000 ---p 00000000 00:00 0 
+2b2f84000000-2b2f84021000 rw-p 00000000 00:00 0 
+2b2f84021000-2b2f88000000 ---p 00000000 00:00 0 
+2b2f88000000-2b2f89853000 rw-p 00000000 00:00 0 
+2b2f89853000-2b2f8c000000 ---p 00000000 00:00 0 
+2b2f8c000000-2b2f8d506000 rw-p 00000000 00:00 0 
+2b2f8d506000-2b2f90000000 ---p 00000000 00:00 0 
+2b2f90000000-2b2f90e84000 rw-p 00000000 00:00 0 
+2b2f90e84000-2b2f94000000 ---p 00000000 00:00 0 
+2b2f94000000-2b2f94021000 rw-p 00000000 00:00 0 
+2b2f94021000-2b2f98000000 ---p 00000000 00:00 0 
+2b2f98000000-2b2f98021000 rw-p 00000000 00:00 0 
+2b2f98021000-2b2f9c000000 ---p 00000000 00:00 0 
+2b2f9c000000-2b2f9cbd6000 rw-p 00000000 00:00 0 
+2b2f9cbd6000-2b2fa0000000 ---p 00000000 00:00 0 
+2b2fa0000000-2b2fa0017000 r-xp 00000000 08:01 957460                     /home/taisen/altera/15.0/quartus/linux64/libtbbmalloc.so.2
+2b2fa0017000-2b2fa0217000 ---p 00017000 08:01 957460                     /home/taisen/altera/15.0/quartus/linux64/libtbbmalloc.so.2
+2b2fa0217000-2b2fa021a000 rw-p 00017000 08:01 957460                     /home/taisen/altera/15.0/quartus/linux64/libtbbmalloc.so.2
+2b2fa021a000-2b2fa0e2d000 rw-p 00000000 00:00 0 
+2b2fa0e2d000-2b2fa116c000 r-xp 00000000 08:01 969410                     /home/taisen/altera/15.0/quartus/linux64/libaxerces-c.so.26
+2b2fa116c000-2b2fa136b000 ---p 0033f000 08:01 969410                     /home/taisen/altera/15.0/quartus/linux64/libaxerces-c.so.26
+2b2fa136b000-2b2fa13a9000 rw-p 0033e000 08:01 969410                     /home/taisen/altera/15.0/quartus/linux64/libaxerces-c.so.26
+2b2fa13a9000-2b2fa13aa000 rw-p 00000000 00:00 0 
+2b2fa13aa000-2b2fa1c18000 r--p 00000000 08:01 969495                     /home/taisen/altera/15.0/quartus/linux64/libicudata.so.34
+2b2fa1c18000-2b2fa1e17000 ---p 0086e000 08:01 969495                     /home/taisen/altera/15.0/quartus/linux64/libicudata.so.34
+2b2fa1e17000-2b2fa1e18000 rw-p 0086d000 08:01 969495                     /home/taisen/altera/15.0/quartus/linux64/libicudata.so.34
+2b2fa1e18000-2b2fa1e1a000 r-xp 00000000 08:01 969494                     /home/taisen/altera/15.0/quartus/linux64/libtbbmalloc_proxy.so.2
+2b2fa1e1a000-2b2fa201a000 ---p 00002000 08:01 969494                     /home/taisen/altera/15.0/quartus/linux64/libtbbmalloc_proxy.so.2
+2b2fa201a000-2b2fa201b000 rw-p 00002000 08:01 969494                     /home/taisen/altera/15.0/quartus/linux64/libtbbmalloc_proxy.so.2
+2b2fa201b000-2b2fa202a000 r-xp 00000000 08:01 957124                     /home/taisen/altera/15.0/quartus/linux64/libccl_thr.so
+2b2fa202a000-2b2fa2229000 ---p 0000f000 08:01 957124                     /home/taisen/altera/15.0/quartus/linux64/libccl_thr.so
+2b2fa2229000-2b2fa222a000 rw-p 0000e000 08:01 957124                     /home/taisen/altera/15.0/quartus/linux64/libccl_thr.so
+2b2fa222a000-2b2fa224b000 rw-p 00000000 00:00 0 
+2b2fa224b000-2b2fa232d000 r-xp 00000000 08:01 969427                     /home/taisen/altera/15.0/quartus/linux64/libboost_regex.so
+2b2fa232d000-2b2fa252d000 ---p 000e2000 08:01 969427                     /home/taisen/altera/15.0/quartus/linux64/libboost_regex.so
+2b2fa252d000-2b2fa2533000 rw-p 000e2000 08:01 969427                     /home/taisen/altera/15.0/quartus/linux64/libboost_regex.so
+2b2fa2533000-2b2fa2536000 r-xp 00000000 08:01 969456                     /home/taisen/altera/15.0/quartus/linux64/libboost_system.so
+2b2fa2536000-2b2fa2735000 ---p 00003000 08:01 969456                     /home/taisen/altera/15.0/quartus/linux64/libboost_system.so
+2b2fa2735000-2b2fa2736000 rw-p 00002000 08:01 969456                     /home/taisen/altera/15.0/quartus/linux64/libboost_system.so
+2b2fa2736000-2b2fa274c000 r-xp 00000000 08:01 969485                     /home/taisen/altera/15.0/quartus/linux64/libboost_filesystem.so
+2b2fa274c000-2b2fa294c000 ---p 00016000 08:01 969485                     /home/taisen/altera/15.0/quartus/linux64/libboost_filesystem.so
+2b2fa294c000-2b2fa294d000 rw-p 00016000 08:01 969485                     /home/taisen/altera/15.0/quartus/linux64/libboost_filesystem.so
+2b2fa294d000-2b2fa29bb000 r-xp 00000000 08:01 969467                     /home/taisen/altera/15.0/quartus/linux64/libboost_program_options.so
+2b2fa29bb000-2b2fa2bbb000 ---p 0006e000 08:01 969467                     /home/taisen/altera/15.0/quartus/linux64/libboost_program_options.so
+2b2fa2bbb000-2b2fa2bbf000 rw-p 0006e000 08:01 969467                     /home/taisen/altera/15.0/quartus/linux64/libboost_program_options.so
+2b2fa2bbf000-2b2fa2bc0000 ---p 00000000 00:00 0 
+2b2fa2bc0000-2b2fa2dc0000 rwxp 00000000 00:00 0                          [stack:75303]
+2b2fa2dc0000-2b2fa31c0000 rw-p 00000000 00:00 0 
+2b2fa31c0000-2b2fa31d6000 r-xp 00000000 08:01 1871440                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libnet.so
+2b2fa31d6000-2b2fa33d5000 ---p 00016000 08:01 1871440                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libnet.so
+2b2fa33d5000-2b2fa33d6000 rw-p 00015000 08:01 1871440                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libnet.so
+2b2fa33d6000-2b2fa35d6000 rw-p 00000000 00:00 0 
+2b2fa35d6000-2b2fa35de000 r-xp 00000000 08:01 1871435                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libmanagement.so
+2b2fa35de000-2b2fa37de000 ---p 00008000 08:01 1871435                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libmanagement.so
+2b2fa37de000-2b2fa37df000 rw-p 00008000 08:01 1871435                    /home/taisen/altera/15.0/quartus/linux64/jre64/lib/amd64/libmanagement.so
+2b2fa37df000-2b2fa3b56000 r-xp 00000000 08:01 146071                     /home/taisen/altera/15.0/quartus/cusp/bin/libcusp150_parser.so
+2b2fa3b56000-2b2fa3d55000 ---p 00377000 08:01 146071                     /home/taisen/altera/15.0/quartus/cusp/bin/libcusp150_parser.so
+2b2fa3d55000-2b2fa3d7e000 rw-p 00376000 08:01 146071                     /home/taisen/altera/15.0/quartus/cusp/bin/libcusp150_parser.so
+2b2fa3d7e000-2b2fa3fc9000 rw-p 00000000 00:00 0 
+2b2fa4000000-2b2fa4021000 rw-p 00000000 00:00 0 
+2b2fa4021000-2b2fa8000000 ---p 00000000 00:00 0 
+2b2fa8000000-2b2fa8280000 rw-p 00000000 00:00 0 
+2b2fa8280000-2b2fa8400000 ---p 00000000 00:00 0 
+2b2fa8400000-2b2fa8402000 r-xp 00000000 08:01 968373                     /home/taisen/altera/15.0/quartus/linux64/libqcl_pll_tcl.so
+2b2fa8402000-2b2fa8601000 ---p 00002000 08:01 968373                     /home/taisen/altera/15.0/quartus/linux64/libqcl_pll_tcl.so
+2b2fa8601000-2b2fa8602000 rw-p 00001000 08:01 968373                     /home/taisen/altera/15.0/quartus/linux64/libqcl_pll_tcl.so
+2b2fa8602000-2b2fa8604000 r-xp 00000000 08:01 968980                     /home/taisen/altera/15.0/quartus/linux64/libccl_mem_native.so
+2b2fa8604000-2b2fa8803000 ---p 00002000 08:01 968980                     /home/taisen/altera/15.0/quartus/linux64/libccl_mem_native.so
+2b2fa8803000-2b2fa8804000 rw-p 00001000 08:01 968980                     /home/taisen/altera/15.0/quartus/linux64/libccl_mem_native.so
+2b2fa8804000-2b2fa880b000 r-xp 00000000 08:01 957187                     /home/taisen/altera/15.0/quartus/linux64/libccl_ver.so
+2b2fa880b000-2b2fa8a0b000 ---p 00007000 08:01 957187                     /home/taisen/altera/15.0/quartus/linux64/libccl_ver.so
+2b2fa8a0b000-2b2fa8a0c000 rw-p 00007000 08:01 957187                     /home/taisen/altera/15.0/quartus/linux64/libccl_ver.so
+2b2fa8a0c000-2b2fa8a2d000 r-xp 00000000 08:01 957216                     /home/taisen/altera/15.0/quartus/linux64/libccl_err.so
+2b2fa8a2d000-2b2fa8c2d000 ---p 00021000 08:01 957216                     /home/taisen/altera/15.0/quartus/linux64/libccl_err.so
+2b2fa8c2d000-2b2fa8c2f000 rw-p 00021000 08:01 957216                     /home/taisen/altera/15.0/quartus/linux64/libccl_err.so
+2b2fa8c2f000-2b2fa8c3d000 rw-p 00000000 00:00 0 
+2b2fa8c3d000-2b2fa8c75000 r-xp 00000000 08:01 957058                     /home/taisen/altera/15.0/quartus/linux64/libccl_mem_dyn.so
+2b2fa8c75000-2b2fa8e75000 ---p 00038000 08:01 957058                     /home/taisen/altera/15.0/quartus/linux64/libccl_mem_dyn.so
+2b2fa8e75000-2b2fa8e77000 rw-p 00038000 08:01 957058                     /home/taisen/altera/15.0/quartus/linux64/libccl_mem_dyn.so
+2b2fa8e77000-2b2fa8f21000 rw-p 00000000 00:00 0 
+2b2fa8f21000-2b2fa8f45000 r-xp 00000000 08:01 957020                     /home/taisen/altera/15.0/quartus/linux64/libccl_fio.so
+2b2fa8f45000-2b2fa9145000 ---p 00024000 08:01 957020                     /home/taisen/altera/15.0/quartus/linux64/libccl_fio.so
+2b2fa9145000-2b2fa914a000 rw-p 00024000 08:01 957020                     /home/taisen/altera/15.0/quartus/linux64/libccl_fio.so
+2b2fa914a000-2b2fa91af000 r-xp 00000000 08:01 957807                     /home/taisen/altera/15.0/quartus/linux64/libccl_gen.so
+2b2fa91af000-2b2fa93ae000 ---p 00065000 08:01 957807                     /home/taisen/altera/15.0/quartus/linux64/libccl_gen.so
+2b2fa93ae000-2b2fa93b3000 rw-p 00064000 08:01 957807                     /home/taisen/altera/15.0/quartus/linux64/libccl_gen.so
+2b2fa93b3000-2b2fa93d1000 r-xp 00000000 08:01 957504                     /home/taisen/altera/15.0/quartus/linux64/libccl_zlib.so
+2b2fa93d1000-2b2fa95d0000 ---p 0001e000 08:01 957504                     /home/taisen/altera/15.0/quartus/linux64/libccl_zlib.so
+2b2fa95d0000-2b2fa95d1000 rw-p 0001d000 08:01 957504                     /home/taisen/altera/15.0/quartus/linux64/libccl_zlib.so
+2b2fa95d1000-2b2fa95f7000 r-xp 00000000 08:01 957100                     /home/taisen/altera/15.0/quartus/linux64/libccl_cfg_ini.so
+2b2fa95f7000-2b2fa97f7000 ---p 00026000 08:01 957100                     /home/taisen/altera/15.0/quartus/linux64/libccl_cfg_ini.so
+2b2fa97f7000-2b2fa97fc000 rw-p 00026000 08:01 957100                     /home/taisen/altera/15.0/quartus/linux64/libccl_cfg_ini.so
+2b2fa97fc000-2b2fa97fd000 rw-p 00000000 00:00 0 
+2b2fa97fd000-2b2fa9827000 r-xp 00000000 08:01 957293                     /home/taisen/altera/15.0/quartus/linux64/libccl_qtl.so
+2b2fa9827000-2b2fa9a26000 ---p 0002a000 08:01 957293                     /home/taisen/altera/15.0/quartus/linux64/libccl_qtl.so
+2b2fa9a26000-2b2fa9a2c000 rw-p 00029000 08:01 957293                     /home/taisen/altera/15.0/quartus/linux64/libccl_qtl.so
+2b2fa9a2c000-2b2fa9a47000 r-xp 00000000 08:01 957632                     /home/taisen/altera/15.0/quartus/linux64/libccl_fstr.so
+2b2fa9a47000-2b2fa9c47000 ---p 0001b000 08:01 957632                     /home/taisen/altera/15.0/quartus/linux64/libccl_fstr.so
+2b2fa9c47000-2b2fa9c4b000 rw-p 0001b000 08:01 957632                     /home/taisen/altera/15.0/quartus/linux64/libccl_fstr.so
+2b2fa9c4b000-2b2fa9c95000 r-xp 00000000 08:01 957147                     /home/taisen/altera/15.0/quartus/linux64/libccl_atcl.so
+2b2fa9c95000-2b2fa9e95000 ---p 0004a000 08:01 957147                     /home/taisen/altera/15.0/quartus/linux64/libccl_atcl.so
+2b2fa9e95000-2b2fa9e9a000 rw-p 0004a000 08:01 957147                     /home/taisen/altera/15.0/quartus/linux64/libccl_atcl.so
+2b2fa9e9a000-2b2fa9e9b000 rw-p 00000000 00:00 0 
+2b2fa9e9b000-2b2fa9e9e000 r-xp 00000000 08:01 957045                     /home/taisen/altera/15.0/quartus/linux64/libccl_clw.so
+2b2fa9e9e000-2b2faa09e000 ---p 00003000 08:01 957045                     /home/taisen/altera/15.0/quartus/linux64/libccl_clw.so
+2b2faa09e000-2b2faa09f000 rw-p 00003000 08:01 957045                     /home/taisen/altera/15.0/quartus/linux64/libccl_clw.so
+2b2faa09f000-2b2faa0c1000 r-xp 00000000 08:01 969474                     /home/taisen/altera/15.0/quartus/linux64/liblzma.so.5
+2b2faa0c1000-2b2faa1c0000 ---p 00022000 08:01 969474                     /home/taisen/altera/15.0/quartus/linux64/liblzma.so.5
+2b2faa1c0000-2b2faa1c1000 rw-p 00021000 08:01 969474                     /home/taisen/altera/15.0/quartus/linux64/liblzma.so.5
+2b2faa1c1000-2b2faa1ca000 r-xp 00000000 08:01 957266                     /home/taisen/altera/15.0/quartus/linux64/libccl_tst.so
+2b2faa1ca000-2b2faa3ca000 ---p 00009000 08:01 957266                     /home/taisen/altera/15.0/quartus/linux64/libccl_tst.so
+2b2faa3ca000-2b2faa3cb000 rw-p 00009000 08:01 957266                     /home/taisen/altera/15.0/quartus/linux64/libccl_tst.so
+2b2faa3cb000-2b2faa3e4000 r-xp 00000000 08:01 957084                     /home/taisen/altera/15.0/quartus/linux64/libdb_pdb.so
+2b2faa3e4000-2b2faa5e4000 ---p 00019000 08:01 957084                     /home/taisen/altera/15.0/quartus/linux64/libdb_pdb.so
+2b2faa5e4000-2b2faa5e6000 rw-p 00019000 08:01 957084                     /home/taisen/altera/15.0/quartus/linux64/libdb_pdb.so
+2b2faa5e6000-2b2faa615000 r-xp 00000000 08:01 957115                     /home/taisen/altera/15.0/quartus/linux64/libccl_big.so
+2b2faa615000-2b2faa814000 ---p 0002f000 08:01 957115                     /home/taisen/altera/15.0/quartus/linux64/libccl_big.so
+2b2faa814000-2b2faa816000 rw-p 0002e000 08:01 957115                     /home/taisen/altera/15.0/quartus/linux64/libccl_big.so
+2b2faa816000-2b2faa817000 r-xp 00000000 08:01 968646                     /home/taisen/altera/15.0/quartus/linux64/libccl_interface.so
+2b2faa817000-2b2faaa16000 ---p 00001000 08:01 968646                     /home/taisen/altera/15.0/quartus/linux64/libccl_interface.so
+2b2faaa16000-2b2faaa17000 rw-p 00000000 08:01 968646                     /home/taisen/altera/15.0/quartus/linux64/libccl_interface.so
+2b2faaa17000-2b2faaa1d000 r-xp 00000000 08:01 957529                     /home/taisen/altera/15.0/quartus/linux64/libccl_put.so
+2b2faaa1d000-2b2faac1d000 ---p 00006000 08:01 957529                     /home/taisen/altera/15.0/quartus/linux64/libccl_put.so
+2b2faac1d000-2b2faac1e000 rw-p 00006000 08:01 957529                     /home/taisen/altera/15.0/quartus/linux64/libccl_put.so
+2b2faac1e000-2b2faaf5d000 r-xp 00000000 08:01 969398                     /home/taisen/altera/15.0/quartus/linux64/libaxerces-c.so
+2b2faaf5d000-2b2fab15c000 ---p 0033f000 08:01 969398                     /home/taisen/altera/15.0/quartus/linux64/libaxerces-c.so
+2b2fab15c000-2b2fab19a000 rw-p 0033e000 08:01 969398                     /home/taisen/altera/15.0/quartus/linux64/libaxerces-c.so
+2b2fab19a000-2b2fab19b000 rw-p 00000000 00:00 0 
+2b2fab19b000-2b2fab1a9000 r-xp 00000000 08:01 957806                     /home/taisen/altera/15.0/quartus/linux64/libccl_xml.so
+2b2fab1a9000-2b2fab3a8000 ---p 0000e000 08:01 957806                     /home/taisen/altera/15.0/quartus/linux64/libccl_xml.so
+2b2fab3a8000-2b2fab3aa000 rw-p 0000d000 08:01 957806                     /home/taisen/altera/15.0/quartus/linux64/libccl_xml.so
+2b2fab3aa000-2b2fab468000 r-xp 00000000 08:01 957200                     /home/taisen/altera/15.0/quartus/linux64/libccl_msg.so
+2b2fab468000-2b2fab667000 ---p 000be000 08:01 957200                     /home/taisen/altera/15.0/quartus/linux64/libccl_msg.so
+2b2fab667000-2b2fab676000 rw-p 000bd000 08:01 957200                     /home/taisen/altera/15.0/quartus/linux64/libccl_msg.so
+2b2fab676000-2b2fab6ab000 rw-p 00000000 00:00 0 
+2b2fab6ab000-2b2fab6ad000 r-xp 00000000 08:01 957769                     /home/taisen/altera/15.0/quartus/linux64/libccl_itcl.so
+2b2fab6ad000-2b2fab8ac000 ---p 00002000 08:01 957769                     /home/taisen/altera/15.0/quartus/linux64/libccl_itcl.so
+2b2fab8ac000-2b2fab8ad000 rw-p 00001000 08:01 957769                     /home/taisen/altera/15.0/quartus/linux64/libccl_itcl.so
+2b2fab8ad000-2b2fab8d4000 r-xp 00000000 08:01 957770                     /home/taisen/altera/15.0/quartus/linux64/libccl_qsym.so
+2b2fab8d4000-2b2fabad4000 ---p 00027000 08:01 957770                     /home/taisen/altera/15.0/quartus/linux64/libccl_qsym.so
+2b2fabad4000-2b2fabad7000 rw-p 00027000 08:01 957770                     /home/taisen/altera/15.0/quartus/linux64/libccl_qsym.so
+2b2fabad7000-2b2fabcfa000 r-xp 00000000 08:01 957259                     /home/taisen/altera/15.0/quartus/linux64/libdb_dbs.so
+2b2fabcfa000-2b2fabefa000 ---p 00223000 08:01 957259                     /home/taisen/altera/15.0/quartus/linux64/libdb_dbs.so
+2b2fabefa000-2b2fabf58000 rw-p 00223000 08:01 957259                     /home/taisen/altera/15.0/quartus/linux64/libdb_dbs.so
+2b2fabf58000-2b2fabf68000 r-xp 00000000 08:01 957436                     /home/taisen/altera/15.0/quartus/linux64/libccl_dyn.so
+2b2fabf68000-2b2fac168000 ---p 00010000 08:01 957436                     /home/taisen/altera/15.0/quartus/linux64/libccl_dyn.so
+2b2fac168000-2b2fac16a000 rw-p 00010000 08:01 957436                     /home/taisen/altera/15.0/quartus/linux64/libccl_dyn.so
+2b2fac16a000-2b2fac473000 r-xp 00000000 08:01 957468                     /home/taisen/altera/15.0/quartus/linux64/libddb_dstr.so
+2b2fac473000-2b2fac673000 ---p 00309000 08:01 957468                     /home/taisen/altera/15.0/quartus/linux64/libddb_dstr.so
+2b2fac673000-2b2fac6cc000 rw-p 00309000 08:01 957468                     /home/taisen/altera/15.0/quartus/linux64/libddb_dstr.so
+2b2fac6cc000-2b2fac6cd000 rw-p 00000000 00:00 0 
+2b2fac6cd000-2b2fac6f0000 r-xp 00000000 08:01 957574                     /home/taisen/altera/15.0/quartus/linux64/libdb_cdb_atom_definition.so
+2b2fac6f0000-2b2fac8ef000 ---p 00023000 08:01 957574                     /home/taisen/altera/15.0/quartus/linux64/libdb_cdb_atom_definition.so
+2b2fac8ef000-2b2fac8f3000 rw-p 00022000 08:01 957574                     /home/taisen/altera/15.0/quartus/linux64/libdb_cdb_atom_definition.so
+2b2fac8f3000-2b2fb05e3000 r-xp 00000000 08:01 957305                     /home/taisen/altera/15.0/quartus/linux64/libdb_wys.so
+2b2fb05e3000-2b2fb07e3000 ---p 03cf0000 08:01 957305                     /home/taisen/altera/15.0/quartus/linux64/libdb_wys.so
+2b2fb07e3000-2b2fb0bd8000 rw-p 03cf0000 08:01 957305                     /home/taisen/altera/15.0/quartus/linux64/libdb_wys.so
+2b2fb0bd8000-2b2fb0d37000 rw-p 00000000 00:00 0 
+2b2fb0d37000-2b2fb1f71000 r-xp 00000000 08:01 957658                     /home/taisen/altera/15.0/quartus/linux64/libatm_astr.so
+2b2fb1f71000-2b2fb2170000 ---p 0123a000 08:01 957658                     /home/taisen/altera/15.0/quartus/linux64/libatm_astr.so
+2b2fb2170000-2b2fb232a000 rw-p 01239000 08:01 957658                     /home/taisen/altera/15.0/quartus/linux64/libatm_astr.so
+2b2fb232a000-2b2fb2346000 rw-p 00000000 00:00 0 
+2b2fb2346000-2b2fb2350000 r-xp 00000000 08:01 957176                     /home/taisen/altera/15.0/quartus/linux64/libccl_ipc.so
+2b2fb2350000-2b2fb2550000 ---p 0000a000 08:01 957176                     /home/taisen/altera/15.0/quartus/linux64/libccl_ipc.so
+2b2fb2550000-2b2fb2551000 rw-p 0000a000 08:01 957176                     /home/taisen/altera/15.0/quartus/linux64/libccl_ipc.so
+2b2fb2551000-2b2fb26a4000 r-xp 00000000 08:01 957682                     /home/taisen/altera/15.0/quartus/linux64/libsys_cpt.so
+2b2fb26a4000-2b2fb28a4000 ---p 00153000 08:01 957682                     /home/taisen/altera/15.0/quartus/linux64/libsys_cpt.so
+2b2fb28a4000-2b2fb28bd000 rw-p 00153000 08:01 957682                     /home/taisen/altera/15.0/quartus/linux64/libsys_cpt.so
+2b2fb28bd000-2b2fb28c3000 rw-p 00000000 00:00 0 
+2b2fb28c3000-2b2fb2a30000 r-xp 00000000 08:01 957122                     /home/taisen/altera/15.0/quartus/linux64/libddb_dev.so
+2b2fb2a30000-2b2fb2c2f000 ---p 0016d000 08:01 957122                     /home/taisen/altera/15.0/quartus/linux64/libddb_dev.so
+2b2fb2c2f000-2b2fb2c40000 rw-p 0016c000 08:01 957122                     /home/taisen/altera/15.0/quartus/linux64/libddb_dev.so
+2b2fb2c40000-2b2fb2c66000 rw-p 00000000 00:00 0 
+2b2fb2c66000-2b2fb2ca9000 r-xp 00000000 08:01 957417                     /home/taisen/altera/15.0/quartus/linux64/libddb_dmig.so
+2b2fb2ca9000-2b2fb2ea8000 ---p 00043000 08:01 957417                     /home/taisen/altera/15.0/quartus/linux64/libddb_dmig.so
+2b2fb2ea8000-2b2fb2eab000 rw-p 00042000 08:01 957417                     /home/taisen/altera/15.0/quartus/linux64/libddb_dmig.so
+2b2fb2eab000-2b2fb2eac000 rw-p 00000000 00:00 0 
+2b2fb2eac000-2b2fb3238000 r-xp 00000000 08:01 957239                     /home/taisen/altera/15.0/quartus/linux64/libddb_dygr.so
+2b2fb3238000-2b2fb3438000 ---p 0038c000 08:01 957239                     /home/taisen/altera/15.0/quartus/linux64/libddb_dygr.so
+2b2fb3438000-2b2fb347d000 rw-p 0038c000 08:01 957239                     /home/taisen/altera/15.0/quartus/linux64/libddb_dygr.so
+2b2fb347d000-2b2fb3483000 rw-p 00000000 00:00 0 
+2b2fb3483000-2b2fb34f1000 r-xp 00000000 08:01 957062                     /home/taisen/altera/15.0/quartus/linux64/libddb_dtm.so
+2b2fb34f1000-2b2fb36f1000 ---p 0006e000 08:01 957062                     /home/taisen/altera/15.0/quartus/linux64/libddb_dtm.so
+2b2fb36f1000-2b2fb36fb000 rw-p 0006e000 08:01 957062                     /home/taisen/altera/15.0/quartus/linux64/libddb_dtm.so
+2b2fb36fb000-2b2fb36fc000 rw-p 00000000 00:00 0 
+2b2fb36fc000-2b2fb378b000 r-xp 00000000 08:01 957148                     /home/taisen/altera/15.0/quartus/linux64/libddb_dpow.so
+2b2fb378b000-2b2fb398a000 ---p 0008f000 08:01 957148                     /home/taisen/altera/15.0/quartus/linux64/libddb_dpow.so
+2b2fb398a000-2b2fb3990000 rw-p 0008e000 08:01 957148                     /home/taisen/altera/15.0/quartus/linux64/libddb_dpow.so
+2b2fb3990000-2b2fb39b8000 r-xp 00000000 08:01 957497                     /home/taisen/altera/15.0/quartus/linux64/libddb_dmgr.so
+2b2fb39b8000-2b2fb3bb8000 ---p 00028000 08:01 957497                     /home/taisen/altera/15.0/quartus/linux64/libddb_dmgr.so
+2b2fb3bb8000-2b2fb3bbb000 rw-p 00028000 08:01 957497                     /home/taisen/altera/15.0/quartus/linux64/libddb_dmgr.so
+2b2fb3bbb000-2b2fb3bc5000 r-xp 00000000 08:01 957240                     /home/taisen/altera/15.0/quartus/linux64/libccl_cksum.so
+2b2fb3bc5000-2b2fb3dc5000 ---p 0000a000 08:01 957240                     /home/taisen/altera/15.0/quartus/linux64/libccl_cksum.so
+2b2fb3dc5000-2b2fb3dc6000 rw-p 0000a000 08:01 957240                     /home/taisen/altera/15.0/quartus/linux64/libccl_cksum.so
+2b2fb3dc6000-2b2fb3dca000 r-xp 00000000 08:01 957391                     /home/taisen/altera/15.0/quartus/linux64/libccl_ntf.so
+2b2fb3dca000-2b2fb3fc9000 ---p 00004000 08:01 957391                     /home/taisen/altera/15.0/quartus/linux64/libccl_ntf.so
+2b2fb3fc9000-2b2fb3fca000 rw-p 00003000 08:01 957391                     /home/taisen/altera/15.0/quartus/linux64/libccl_ntf.so
+2b2fb3fca000-2b2fb3fcf000 r-xp 00000000 08:01 957650                     /home/taisen/altera/15.0/quartus/linux64/libccl_ntfq.so
+2b2fb3fcf000-2b2fb41ce000 ---p 00005000 08:01 957650                     /home/taisen/altera/15.0/quartus/linux64/libccl_ntfq.so
+2b2fb41ce000-2b2fb41cf000 rw-p 00004000 08:01 957650                     /home/taisen/altera/15.0/quartus/linux64/libccl_ntfq.so
+2b2fb41cf000-2b2fb43e8000 r-xp 00000000 08:01 957437                     /home/taisen/altera/15.0/quartus/linux64/libdb_acf.so
+2b2fb43e8000-2b2fb45e7000 ---p 00219000 08:01 957437                     /home/taisen/altera/15.0/quartus/linux64/libdb_acf.so
+2b2fb45e7000-2b2fb465e000 rw-p 00218000 08:01 957437                     /home/taisen/altera/15.0/quartus/linux64/libdb_acf.so
+2b2fb465e000-2b2fb466e000 r-xp 00000000 08:01 957377                     /home/taisen/altera/15.0/quartus/linux64/libdb_dbm.so
+2b2fb466e000-2b2fb486d000 ---p 00010000 08:01 957377                     /home/taisen/altera/15.0/quartus/linux64/libdb_dbm.so
+2b2fb486d000-2b2fb486e000 rw-p 0000f000 08:01 957377                     /home/taisen/altera/15.0/quartus/linux64/libdb_dbm.so
+2b2fb486e000-2b2fb4883000 r-xp 00000000 08:01 957757                     /home/taisen/altera/15.0/quartus/linux64/libsys_afm.so
+2b2fb4883000-2b2fb4a83000 ---p 00015000 08:01 957757                     /home/taisen/altera/15.0/quartus/linux64/libsys_afm.so
+2b2fb4a83000-2b2fb4a85000 rw-p 00015000 08:01 957757                     /home/taisen/altera/15.0/quartus/linux64/libsys_afm.so
+2b2fb4a85000-2b2fb4ae5000 r-xp 00000000 08:01 957309                     /home/taisen/altera/15.0/quartus/linux64/libdb_qdb.so
+2b2fb4ae5000-2b2fb4ce4000 ---p 00060000 08:01 957309                     /home/taisen/altera/15.0/quartus/linux64/libdb_qdb.so
+2b2fb4ce4000-2b2fb4cec000 rw-p 0005f000 08:01 957309                     /home/taisen/altera/15.0/quartus/linux64/libdb_qdb.so
+2b2fb4cec000-2b2fb4eb8000 r-xp 00000000 08:01 957139                     /home/taisen/altera/15.0/quartus/linux64/libdb_hdb.so
+2b2fb4eb8000-2b2fb50b8000 ---p 001cc000 08:01 957139                     /home/taisen/altera/15.0/quartus/linux64/libdb_hdb.so
+2b2fb50b8000-2b2fb50d9000 rw-p 001cc000 08:01 957139                     /home/taisen/altera/15.0/quartus/linux64/libdb_hdb.so
+2b2fb50d9000-2b2fb50e0000 rw-p 00000000 00:00 0 
+2b2fb50e0000-2b2fb50e3000 r-xp 00000000 08:01 957090                     /home/taisen/altera/15.0/quartus/linux64/libatm_autil.so
+2b2fb50e3000-2b2fb52e2000 ---p 00003000 08:01 957090                     /home/taisen/altera/15.0/quartus/linux64/libatm_autil.so
+2b2fb52e2000-2b2fb52e3000 rw-p 00002000 08:01 957090                     /home/taisen/altera/15.0/quartus/linux64/libatm_autil.so
+7ffdd1f80000-7ffdd1fa0000 rwxp 00000000 00:00 0                          [stack]
+7ffdd1fa0000-7ffdd1fa5000 rw-p 00000000 00:00 0 
+7ffdd1fd8000-7ffdd1fda000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx1500M -XX:+UseSerialGC 
+java_command: com.altera.qsys.generate.QsysGenerate soc_system.qsys --synthesis=VERILOG
+java_class_path (initial): /home/taisen/altera/15.0/quartus/sopc_builder/model/lib/Nlview.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/QuickServer.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/TableLayout.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/appframework-1.03.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/asm-3.1.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/asm-commons-3.1.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/basicmodel.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/beansbinding-1.2.1.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/binding-2.0.6.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.componenteditor2.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.app_lib.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.editor.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.elements.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.core.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.hal.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.lwhal.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.schema.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.scripting.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.commandline.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.cpexample.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.flash.jar:/home/taisen/altera/15.0/quartus/sopc_builder/model/lib/com.altera.embeddedsw.launch.jar:/home/taisen/alt
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/home/taisen/altera/15.0/quartus/linux64:/home/taisen/altera/15.0/embedded/host_tools/mentor/gnu/arm/baremetal/bin:/home/taisen/altera/15.0/embedded/host_tools/altera/preloadergen:/home/taisen/altera/15.0/embedded/host_tools/altera/mkimage:/home/taisen/altera/15.0/embedded/host_tools/altera/mkpimage:/home/taisen/altera/15.0/embedded/host_tools/altera/device_tree:/home/taisen/altera/15.0/embedded/host_tools/altera/diskutils:/home/taisen/altera/15.0/embedded/host_tools/altera/authtool:/home/taisen/altera/15.0/embedded/host_tools/gnu/dtc:/home/taisen/altera/15.0/embedded/ds-5/sw/gcc/bin:/home/taisen/altera/15.0/embedded/ds-5/sw/ARMCompiler5.05u1/bin:/home/taisen/altera/15.0/embedded/ds-5/bin:/home/taisen/altera/15.0/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin:/home/taisen/altera/15.0/nios2eds/sdk2/bin:/home/taisen/altera/15.0/nios2eds/bin:/home/taisen/altera/15.0/quartus/bin:/home/taisen/altera/15.0/quartus/sopc_builder/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+LD_LIBRARY_PATH=/home/taisen/altera/15.0/quartus/linux64
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xa2fc90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0xa2fc90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x89b4b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00001000, sa_flags=0x10000000
+SIGXFSZ: SIG_IGN, sa_mask[0]=0x01000000, sa_flags=0x10000000
+SIGILL: [libjvm.so+0x89b4b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x89cc50], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x89df00], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libcusp150_parser.so+0x13ba40], sa_mask[0]=0x00000002, sa_flags=0x10000000
+SIGTERM: [libcusp150_parser.so+0x13ba40], sa_mask[0]=0x00004000, sa_flags=0x10000000
+SIGQUIT: [libjvm.so+0x89df00], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=12.04
+DISTRIB_CODENAME=precise
+DISTRIB_DESCRIPTION="Ubuntu 12.04.5 LTS"
+
+uname:Linux 3.13.0-61-generic #100~precise1-Ubuntu SMP Wed Jul 29 12:06:40 UTC 2015 x86_64
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK infinity, CORE 0k, NPROC 27464, NOFILE 4096, AS infinity
+load average:1.64 1.41 1.12
+
+/proc/meminfo:
+MemTotal:        3536496 kB
+MemFree:          356520 kB
+Buffers:           24252 kB
+Cached:           414924 kB
+SwapCached:       277032 kB
+Active:          1770372 kB
+Inactive:        1034420 kB
+Active(anon):    1622984 kB
+Inactive(anon):   755428 kB
+Active(file):     147388 kB
+Inactive(file):   278992 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       3688444 kB
+SwapFree:        2129768 kB
+Dirty:               100 kB
+Writeback:             0 kB
+AnonPages:       2156844 kB
+Mapped:           123388 kB
+Shmem:             12496 kB
+Slab:              79756 kB
+SReclaimable:      33984 kB
+SUnreclaim:        45772 kB
+KernelStack:        6584 kB
+PageTables:        38364 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     5456692 kB
+Committed_AS:    4902348 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      176248 kB
+VmallocChunk:   34359462852 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    573440 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       79680 kB
+DirectMap2M:     3610624 kB
+
+
+CPU:total 4 (1 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, tsc, tscinvbit
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3635QM CPU @ 2.40GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 2394.285
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology tsc_reliable nonstop_tsc aperfmperf pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm ida arat epb pln pts dtherm fsgsbase tsc_adjust smep
+bogomips	: 4788.57
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 42 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3635QM CPU @ 2.40GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 2394.285
+cache size	: 6144 KB
+physical id	: 2
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology tsc_reliable nonstop_tsc aperfmperf pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm ida arat epb pln pts dtherm fsgsbase tsc_adjust smep
+bogomips	: 4788.57
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 42 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3635QM CPU @ 2.40GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 2394.285
+cache size	: 6144 KB
+physical id	: 4
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology tsc_reliable nonstop_tsc aperfmperf pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm ida arat epb pln pts dtherm fsgsbase tsc_adjust smep
+bogomips	: 4788.57
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 42 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Core(TM) i7-3635QM CPU @ 2.40GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 2394.285
+cache size	: 6144 KB
+physical id	: 6
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology tsc_reliable nonstop_tsc aperfmperf pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm ida arat epb pln pts dtherm fsgsbase tsc_adjust smep
+bogomips	: 4788.57
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 42 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 3536496k(356272k free), swap 3688444k(2129768k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.5-b02) for linux-amd64 JRE (1.8.0_05-b13), built on Mar 18 2014 00:29:27 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Wed Aug 26 11:20:20 2015
+elapsed time: 17 seconds
+
